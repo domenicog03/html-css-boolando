@@ -1,0 +1,237 @@
+/*-------------------
+    RESET
+-------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*-------------------
+    GRID LAYOUT
+-------------------*/
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.container-fluid {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.row > * {
+    padding: 0 10px;
+}
+
+.col-20 {
+    width: 20%;
+}
+.col-25 {
+    width: 25%;
+}
+.col-30 {
+    width: 30%;
+}
+.col-33 {
+    width: calc(100% / 3);
+}
+.col-40 {
+    width: 40%;
+}
+.col-50 {
+    width: 50%;
+}
+.col-60 {
+    width: 60%;
+}
+.col-70 {
+    width: 70%;
+}
+.col-80 {
+    width: 80%;
+}
+.col-100 {
+    width: 100%;
+}
+.col-grow {
+    flex-grow: 1;
+}
+
+/*-------------------
+    TYPOGRAPHY
+-------------------*/
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-------------------
+    HEADER
+-------------------*/
+header {
+    background-color: #ff6900;
+    padding: 16px 0;
+    color: #fff;
+    box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header .logo {
+    text-align: center;
+}
+header .logo > img {
+    height: 30px;
+}
+
+header nav {
+    width: 30%;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+header .logo {
+    flex-grow: 1;
+} 
+
+.list-icons {
+    justify-content: flex-end;
+}
+
+/*-------------------
+    MAIN
+-------------------*/
+main {
+    padding: 60px 0px;
+}
+
+.cards-list .row:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.card-images {
+    position: relative;
+}
+
+.card .card-image-default {
+    display: block;
+}
+.card:hover .card-image-default {
+    display: none;
+}
+.card .card-image-hover {
+    display: none;
+}
+.card:hover .card-image-hover {
+    display: block;
+}
+
+.card-heart {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+}
+
+.card-heart:hover {
+    color: red;
+}
+
+.card-tags {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}
+
+.card .price-discout {
+    color: red;
+    font-weight: 700;
+}
+.card .price-regular {
+    text-decoration: line-through;
+}
+.card h3 {
+    text-transform: uppercase;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 8px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+}
+
+.tag-green {
+    background-color: green;
+}
+.tag-red {
+    background-color: red;
+}
+
+/*-------------------
+    FOOTER
+-------------------*/
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav {
+    margin-top: 12px;
+}
+
+footer nav ul {
+    display: flex;
+    list-style: none;
+    gap: 8px;
+}
+
+footer nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer .list-social {
+    justify-content: center;
+    font-size: 18px;
+}
